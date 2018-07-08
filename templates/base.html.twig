@@ -11,38 +11,39 @@
     </head>
 
     <body>
-    {% block navigation %}
-        <nav class="white" role="navigation">
-            <div class="nav-wrapper container">
-                <a href="#" id="logo-container" class="brand-logo">Logo</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#skill">Compétences</a></li>
-                    <li><a href="#cursus">Parcours</a></li>
-                    <li><a href="#project">Projets</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    <div class="navbar-fixed">
+        {% block navigation %}
+            <nav class="white " role="navigation">
+                <div class="nav-wrapper container">
+                    <a href="#" id="logo-container" class="brand-logo">Logo</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#skill">Compétences</a></li>
+                        <li><a href="#cursus">Parcours</a></li>
+                        <li><a href="#project">Projets</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
 
-                <ul id="nav-mobile" class="sidenav">
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#skill">Compétences</a></li>
-                    <li><a href="#cursus">Parcours</a></li>
-                    <li><a href="#project">Projets</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-    {% endblock %}
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-        <div id="index-banner" class="parallax-container">
+                </div>
+            </nav>
+        {% endblock %}
+    </div>
+    <ul id="nav-mobile" class="sidenav">
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#skill">Compétences</a></li>
+        <li><a href="#cursus">Parcours</a></li>
+        <li><a href="#project">Projets</a></li>
+        <li><a href="#">Contact<img class="icon-mobile-nav" src="{{ asset('icon/paper-plane.svg') }}" alt="Contact"></a></li>
+    </ul>
+
+        <div id="index-banner" class="parallax-container first_background">
             <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2">Développeur web fullstack</h1>
-                    <div class="row center">
-                        <h5 class="header col s12 light">Conception et développement de sites interactives et responsive</h5>
-                    </div>
+                    <h1 class="header center text-lighten-1 focus-title">Conception et développement de sites interactives et responsive</h1>
+
                     <br><br>
                 </div>
             </div>
@@ -56,24 +57,43 @@
                 <div class="col s12 center">
                     <h2><i class="mdi-content-send brown-text"></i></h2>
                     <h3 id="about">A propos</h3>
-                    <p class="left-align light">Bonjour, je m'appelle Augustin, <br>
-                        Je suis développeur web junior. <br>
-                        Tahitien, curieux, et passionné par les nouvelles technologies, ma reconversion dans le développement web me permet aujourd'hui d'exprimer ma créativité.
-                        <br>
-
-                        J'aime travailler sur des projets variés : de l'intégration de sites vitrines HTML/CSS et jQuery, au développement de sites dynamiques, ou encore de sites administrables à l'aide de CMS comme Wordpress.
-                        Une veille quotidienne et une polyvalence issue d'un parcours professionnel riche en expériences sont parmi les atouts que je souhaite à présent partager au sein d'une nouvelle équipe. </p>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center red-text"><img src="{{ asset('icon/graduation-hat.svg') }}" alt="Student" class="icon-main"></h2>
+                            <p class="light center">
+                                Je suis actuellement étudiant au sein du parcours diplômant <a href="https://openclassrooms.com/paths/21-chef-de-projet-multimedia-developpement" target="_blank">
+                                "Chef de projet multimédia - Développement"</a> d'Openclassrooms enregistré au <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=26290" target="_blank">
+                                    Répertoire National des Certifications Professionnelles
+                                </a> ou j'apprends à maîtriser les langages de programmation ainsi que la gestion de projet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center red-text"><img src="{{ asset('icon/like.svg') }}" alt="Coeur" class="icon-main"></h2>
+                            <p class="light center">
+                                Passionné par l'informatique en quête de nouvelles connaissances, je suis intéressé par les nouvelles technologie, je suis polyvalent, motivé et déterminé dans mes projets.
+                                Je pratique du sport (salle de musculation, footing) tous les soirs afin de me maintenir en forme et de m'évader quelques heures.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center red-text"><img src="{{ asset('icon/checked.svg') }}" alt="Check" class="icon-main"></h2>
+                            <p class="light center">
+                                Jeune et autodidacte, pratiquant le développement web pendant ma formation et lors de mes temps libres, je développe notamment mes compétences grâces aux outils tels que :
+                                Symfony, PHP, MySQL, Javascript, Ajax, JQuery, Git, HTML et CSS. <br>
+                                Je travaille principalement sur un environnement Linux/UNIX.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
     
     <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                
-            </div>
-        </div>
         <div class="parallax"><img src="{{ asset('img/background02.jpg') }}" alt="background 2"></div>
     </div>
     
@@ -85,48 +105,224 @@
 
             <!--   Icon Section   -->
             <div class="row">
+
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center red-text"><i class="large material-icons">devices</i></h2>
-                        <h5 class="center">Responsive Design</h5>
+                        <h2 class="center red-text"><a class="waves-effect waves-light modal-trigger" href="#modal1"><img src="{{ asset('icon/symfony.svg') }}" alt="Sf" class="icon-main"></a></h2>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Symfony 3 & 4</h4>
+                                    <ul>
+                                        <li>Utilisation de composer</li>
+                                        <li>Utilisation de Twig</li>
+                                        <li>Les bases de Symfony</li>
+                                        <li>Gérer les bases de données avec Doctrine2</li>
+                                        <li>Utilisation de Packagist</li>
+                                        <li>Les formulaires</li>
+                                        <li>Les services</li>
+                                        <li>Système de traduction</li>
+                                        <li>Sécurité et gestion des utilisateurs</li>
+                                        <li>Mise en ligne</li>
+                                    </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                            </div>
+                        </div>
+                        <h5 class="center">Symfony</h5>
 
-                        <p class="light center">Applications et sites responsives. <br>
-                        Mobiles first & media queries.
+                        <p class="light center">Utilisation du framework Symfony 3 & 4 <br>
+                            <em>"Ne ré-inventer par la roue quand celle-ci est déjà présente"</em>
                         </p>
                     </div>
                 </div>
-
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center red-text"><i class="large material-icons">code</i></h2>
-                        <h5 class="center">HTML 5 & CSS 3</h5>
+                        <h2 class="center red-text"><a class="waves-effect waves-light modal-trigger" href="#modal2"><img src="{{ asset('icon/php.svg') }}" alt="php" class="icon-main"></a></h2>
+                        <div id="modal2" class="modal">
+                            <div class="modal-content">
+                                <h4>PHP</h4>
+                                    <ul>
+                                        <li>Programmation orienté objet</li>
+                                    </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                            </div>
+                        </div>
+                        <h5 class="center">PHP 7</h5>
 
-                        <p class="light center"></p>
+                        <p class="light center">Un langage back-end toujours à la pointe des dernières novations.</p>
                     </div>
                 </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><a class="waves-effect waves-light modal-trigger" href="#modal3"><img src="{{ asset('icon/js.svg') }}" alt="Js" class="icon-main"></a></h2>
+                        <div id="modal3" class="modal">
+                            <div class="modal-content">
+                                <h4>Javascript</h4>
+                                <ul>
+                                    <li>Programmation orienté objet</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                            </div>
+                        </div>
+                        <h5 class="center">Javascript</h5>
+
+                        <p class="light center">Un langage front-end pour des sites dynamiques utilisant JS & JQuery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center red-text"><i class="large material-icons">widgets</i></h2>
+                        <h2 class="center red-text"><a class="waves-effect waves-light modal-trigger" href="#modal4"><img src="{{ asset('icon/html-5.svg') }}" alt="html & css" class="icon-main"></a></h2>
+                        <div id="modal4" class="modal">
+                            <div class="modal-content">
+                                <h4>HTML & CSS</h4>
+                                    <ul>
+                                        <li>HTML basique et HTLM 5</li>
+                                        <li>CSS basique</li>
+                                    </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                            </div>
+                        </div>
+                        <h5 class="center">HTML 5 & CSS 3</h5>
+
+                        <p class="light center">Une architecture web adéquate respectant les normes W3C</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><a class="waves-effect waves-light modal-trigger" href="#modal5"><img src="{{ asset('icon/responsive.svg') }}" alt="Responsive" class="icon-main"></a></h2>
+                        <div id="modal5" class="modal">
+                            <div class="modal-content">
+                                <h4>Reponsive Designe</h4>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                            </div>
+                        </div>
+                        <h5 class="center">Responsive Design</h5>
+                        <p class="light center">Applications et sites responsives. <br>
+                            Mobiles first & media queries.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><a class="waves-effect waves-light modal-trigger" href="#modal6"><img class="icon-main" src="{{ asset('icon/wordpress.svg') }}" alt="w"></a></h2>
+                        <div id="modal6" class="modal">
+                            <div class="modal-content">
+                                <h4>Content Management System</h4>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                            </div>
+                        </div>
                         <h5 class="center">CMS</h5>
 
                         <p class="light center">Création de sites Wordpress & e-commerces Prestashop.</p>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="{{ asset('img/background03.jpg') }}" alt="background 3"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="col s12 center">
+                <h3 id="skill">Environnement</h3>
             </div>
             <div class="row">
-                <div class="col s12 m4">
+                <div class="col s12 m6">
                     <div class="icon-block">
-                        <h2 class="center red-text"><i class="large material-icons">code</i></h2>
-                        <h5 class="center">HTML 5 & CSS 3</h5>
-
-                        <p class="light center"></p>
+                        <h2 class="center red-text"><img class="icon-main" src="{{ asset('icon/linux.svg') }}" alt="Linux"></h2>
+                        <h5 class="center">Linux</h5>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><img class="icon-main" src="{{ asset('icon/windows.svg') }}" alt="Linux"></h2>
+                        <h5 class="center">Windows</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="{{ asset('img/background04.jpg') }}" alt="background 3"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="col s12 center">
+                <h3 id="cursus">Parcours</h3>
+            </div>
+            <div class="row">
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <!-- Objet 1 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Etudiant Openclassrooms</span>
+                                <span class="time-wrapper"><span class="time">2017 - présent </span></span>
+                            </div>
+                            <div class="desc">Cursus chef de projet multimédia - développement</div>
+                        </div>
+                    </li>
+                    <!-- Objet 2 -->
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">Opérateur TACPI</span>
+                                <span class="time-wrapper"><span class="time">2016 - 2017 </span></span>
+                            </div>
+                            <div class="desc">Armée de Terre - 68ème Régiment d'Artillerie d'Afrique</div>
+                        </div>
+                    </li>
+                    <!-- Objet 3 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Exploitant réseau de Zone</span>
+                                <span class="time-wrapper"><span class="time">2011 - 2016 </span></span>
+                            </div>
+                            <div class="desc">Armée de Terre - 28ème régiment de Transmission - Habilitation SD*</div>
+                        </div>
+                    </li>
+                    <!-- Objet 3 -->
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">Assistant expertise comptable</span>
+                                <span class="time-wrapper"><span class="time">2010 - 2011 </span></span>
+                            </div>
+                            <div class="desc">Maeva beach ressort - Tahiti</div>
+                        </div>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
