@@ -6278,7 +6278,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         var hits = [];
         for (var i = 0; i < ScrollSpy._elements.length; i++) {
           var scrollspy = ScrollSpy._elements[i];
-          var currTop = top + scrollspy.options.scrollOffset || 200;
+          var currTop = top + scrollspy.options.scrollOffset || 300;
 
           if (scrollspy.$el.height() > 0) {
             var elTop = scrollspy.$el.offset().top,

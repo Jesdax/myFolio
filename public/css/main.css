@@ -1,6 +1,6 @@
 
 html {
-    font-size: 14px;
+    font-size: 15px;
 }
 /* --- Navigation --- */
 
@@ -16,7 +16,6 @@ nav .brand-logo {
 .sidenav-trigger {
     color: #ff546d;
 }
-
 
 
 p {
@@ -100,7 +99,7 @@ h1 {
 
 .timeline:before {
     position: absolute;
-    left: 49.5%;
+    left: 50%;
     top: 0;
     content: ' ';
     display: block;
@@ -177,7 +176,7 @@ h1 {
 .direction-r .flag:before {
     position: absolute;
     top: 50%;
-    right: -34px;
+    right: -40px;
     content: ' ';
     display: block;
     width: 12px;
@@ -362,4 +361,9 @@ h1 {
         margin: 1em 4em 0 4em;
     }
 
+}
+
+#particle-canvas {
+    width: 100%;
+    height: 100%;
 }

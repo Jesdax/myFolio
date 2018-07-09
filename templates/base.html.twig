@@ -39,15 +39,7 @@
     </ul>
 
         <div id="index-banner" class="parallax-container first_background">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <br><br>
-                    <h1 class="header center text-lighten-1 focus-title">Conception et développement de sites interactives et responsive</h1>
-
-                    <br><br>
-                </div>
-            </div>
-            <div class="parallax"><img src="{{ asset('img/background01.jpg') }}" alt="Background 1"></div>
+            <div class="parallax" id="particle-canvas"><img src="{{ asset('img/background01.jpg') }}" alt="Background 1"></div>
         </div>
 
     <div class="container">
@@ -56,7 +48,7 @@
             <div class="row">
                 <div class="col s12 center">
                     <h2><i class="mdi-content-send brown-text"></i></h2>
-                    <h3 id="about">A propos</h3>
+                    <h3 id="about" class="scrollspy">A propos</h3>
                     <div class="col s12 m4">
                         <div class="icon-block">
                             <h2 class="center red-text"><img src="{{ asset('icon/graduation-hat.svg') }}" alt="Student" class="icon-main"></h2>
@@ -100,7 +92,7 @@
     <div class="container">
         <div class="section">
             <div class="col s12 center">
-                <h3 id="skill">Compétences</h3>
+                <h3 id="skill" class="scrollspy">Compétences</h3>
             </div>
 
             <!--   Icon Section   -->
@@ -143,6 +135,7 @@
                             <div class="modal-content">
                                 <h4>PHP</h4>
                                     <ul>
+                                        <li>PHP 7</li>
                                         <li>Programmation orienté objet</li>
                                     </ul>
                             </div>
@@ -150,7 +143,7 @@
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
                             </div>
                         </div>
-                        <h5 class="center">PHP 7</h5>
+                        <h5 class="center">PHP</h5>
 
                         <p class="light center">Un langage back-end toujours à la pointe des dernières novations.</p>
                     </div>
@@ -163,6 +156,8 @@
                                 <h4>Javascript</h4>
                                 <ul>
                                     <li>Programmation orienté objet</li>
+                                    <li>JQuery</li>
+                                    <li>AJAX</li>
                                 </ul>
                             </div>
                             <div class="modal-footer">
@@ -185,15 +180,15 @@
                             <div class="modal-content">
                                 <h4>HTML & CSS</h4>
                                     <ul>
-                                        <li>HTML basique et HTLM 5</li>
-                                        <li>CSS basique</li>
+                                        <li>HTLM 5</li>
+                                        <li>CSS 3</li>
                                     </ul>
                             </div>
                             <div class="modal-footer">
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
                             </div>
                         </div>
-                        <h5 class="center">HTML 5 & CSS 3</h5>
+                        <h5 class="center">HTML & CSS</h5>
 
                         <p class="light center">Une architecture web adéquate respectant les normes W3C</p>
                     </div>
@@ -270,7 +265,7 @@
     <div class="container">
         <div class="section">
             <div class="col s12 center">
-                <h3 id="cursus">Parcours</h3>
+                <h3 id="cursus" class="scrollspy">Parcours</h3>
             </div>
             <div class="row">
                 <!-- Timeline -->
@@ -279,7 +274,28 @@
                     <li>
                         <div class="direction-r">
                             <div class="flag-wrapper">
-                                <span class="flag">Etudiant Openclassrooms</span>
+                                <span class="flag"><a class="waves-effect waves-light modal-trigger" href="#modalstudentOC">Etudiant Openclassrooms</a></span>
+                                <div id="modalstudentOC" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Ce que je sais faire</h4>
+                                        <ul>
+                                            <li>Analyser les besoins et objectifs d’un client lors d’un rendez-vous ou appel à projets</li>
+                                            <li>Rédiger une proposition sous la forme d’un cahier des charges</li>
+                                            <li>Soutenir votre proposition lors d’une présentation au client</li>
+                                            <li>Piloter un projet dans le respect du planning et du budget</li>
+                                            <li>Élaborer un rétro-planning et un échéancier</li>
+                                            <li>Rédiger un cahier des charges technique et fonctionnel</li>
+                                            <li>Animer des réunions de suivi et de cadrage</li>
+                                            <li>Travailler en équipe avec une méthodologie de gestion de projet</li>
+                                            <li>Communiquer avec le client pour effectuer une proposition commerciale</li>
+                                            <li>Créer des sites web interactifs en HTML5, CSS, JavaScript, Bootstrap</li>
+                                            <li>Concevoir des applications professionnelles à l’aide de PHP, du framework Symfony et du gestionnaire de versions Git</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Interessant</a>
+                                    </div>
+                                </div>
                                 <span class="time-wrapper"><span class="time">2017 - présent </span></span>
                             </div>
                             <div class="desc">Cursus chef de projet multimédia - développement</div>
@@ -289,7 +305,19 @@
                     <li>
                         <div class="direction-l">
                             <div class="flag-wrapper">
-                                <span class="flag">Opérateur TACPI</span>
+                                <span class="flag"><a class="waves-effect waves-light modal-trigger" href="#modaljob68">Opérateur TACP</a></span>
+                                <div id="modaljob68" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Formation et compétence acquis</h4>
+                                        <ul>
+                                            <li>Communication A.T.L.A.S system</li>
+                                            <li>Expertise topographie</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Bien reçu soldat</a>
+                                    </div>
+                                </div>
                                 <span class="time-wrapper"><span class="time">2016 - 2017 </span></span>
                             </div>
                             <div class="desc">Armée de Terre - 68ème Régiment d'Artillerie d'Afrique</div>
@@ -299,20 +327,50 @@
                     <li>
                         <div class="direction-r">
                             <div class="flag-wrapper">
-                                <span class="flag">Exploitant réseau de Zone</span>
+                                <span class="flag"><a class="waves-effect waves-light modal-trigger" href="#modaljob28">Exploitant réseau de Zone</a></span>
+                                <div id="modaljob28" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Formation et compétence acquis</h4>
+                                        <ul>
+                                            <li>Certificat d'aptitude au tir</li>
+                                            <li>Prévention et secours civiques de niveau 1</li>
+                                            <li>Secourisme au combat de niveau 1</li>
+                                            <li>Technique d'intervention opérationnelle rapprochée</li>
+                                            <li>GE 15 KVA</li>
+                                            <li>Téléphonie</li>
+                                            <li>Montage d'antenne à faisceaux hertziennes</li>
+                                            <li>Communication et mise en place satellite</li>
+                                            <li>Topographie</li>
+                                            <li>TOEIC anglais</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Bien reçu soldat</a>
+                                    </div>
+                                </div>
                                 <span class="time-wrapper"><span class="time">2011 - 2016 </span></span>
                             </div>
                             <div class="desc">Armée de Terre - 28ème régiment de Transmission - Habilitation SD*</div>
                         </div>
                     </li>
-                    <!-- Objet 3 -->
+                    <!-- Objet 4 -->
                     <li>
                         <div class="direction-l">
                             <div class="flag-wrapper">
-                                <span class="flag">Assistant expertise comptable</span>
+                                <span class="flag">Stage comptable</span>
                                 <span class="time-wrapper"><span class="time">2010 - 2011 </span></span>
                             </div>
-                            <div class="desc">Maeva beach ressort - Tahiti</div>
+                            <div class="desc">Assistant comptable - Maeva beach ressort - Tahiti</div>
+                        </div>
+                    </li>
+                    <!-- Objet 5 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Baccalaureat CFE</span>
+                                <span class="time-wrapper"><span class="time">2008 - 2009 </span></span>
+                            </div>
+                            <div class="desc">Comptabilités et finance des entreprises - Lycée Paul Gauguin - Tahiti</div>
                         </div>
                     </li>
 
@@ -327,6 +385,7 @@
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="{{ asset('js/materialize.js') }}"></script>
+    <script src="{{ asset('js/particle.js') }}"></script>
         <script src="{{ asset('js/init.js') }}"></script>
     </body>
 </html>
