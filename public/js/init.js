@@ -13,10 +13,11 @@
 
 var canvasDiv = document.getElementById('particle-canvas');
 var options = {
-    particleColor: '#ffffff',
-    background: 'public/img/background01.jpg',
+    particleColor: '#fefdff',
+    background: 'img/background01.jpg',
     interactive: true,
     speed: 'medium',
-    density: 'high'
+    density: 'high',
+    backgroundSize: 'cover'
 };
 var particleCanvas = new ParticleNetwork(canvasDiv, options);

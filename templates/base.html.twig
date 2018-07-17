@@ -11,6 +11,7 @@
     </head>
 
     <body>
+    <!-- Navigation -->
     <div class="navbar-fixed">
         {% block navigation %}
             <nav class="white " role="navigation">
@@ -30,6 +31,7 @@
             </nav>
         {% endblock %}
     </div>
+    <!-- Navigation mobile -->
     <ul id="nav-mobile" class="sidenav">
         <li><a href="#about">A propos</a></li>
         <li><a href="#skill">Compétences</a></li>
@@ -37,11 +39,14 @@
         <li><a href="#project">Projets</a></li>
         <li><a href="#">Contact<img class="icon-mobile-nav" src="{{ asset('icon/paper-plane.svg') }}" alt="Contact"></a></li>
     </ul>
+    <!-- Image 1er plan -->
+        <div class="parallax-container first_background section valign-wrapper">
+            <img class="profil" src="{{ asset('img/profil.jpg') }}" alt="Profil">
+            <h1>Chef de projet digital junior & Développeur web junior</h1>
 
-        <div id="index-banner" class="parallax-container first_background">
-            <div class="parallax" id="particle-canvas"><img src="{{ asset('img/background01.jpg') }}" alt="Background 1"></div>
         </div>
 
+    <!-- A propos -->
     <div class="container">
         <div class="section">
             <!-- About -->
@@ -84,11 +89,11 @@
             </div>
         </div>
     </div>
-    
+    <!-- Parallax image -->
     <div class="parallax-container valign-wrapper">
         <div class="parallax"><img src="{{ asset('img/background02.jpg') }}" alt="background 2"></div>
     </div>
-    
+    <!-- Compétences -->
     <div class="container">
         <div class="section">
             <div class="col s12 center">
@@ -111,6 +116,7 @@
                                         <li>Gérer les bases de données avec Doctrine2</li>
                                         <li>Utilisation de Packagist</li>
                                         <li>Les formulaires</li>
+                                        <li>SwiftMailer</li>
                                         <li>Les services</li>
                                         <li>Système de traduction</li>
                                         <li>Sécurité et gestion des utilisateurs</li>
@@ -118,7 +124,7 @@
                                     </ul>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vu</a>
                             </div>
                         </div>
                         <h5 class="center">Symfony</h5>
@@ -137,10 +143,11 @@
                                     <ul>
                                         <li>PHP 7</li>
                                         <li>Programmation orienté objet</li>
+                                        <li>Espace membres</li>
                                     </ul>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vu</a>
                             </div>
                         </div>
                         <h5 class="center">PHP</h5>
@@ -156,12 +163,13 @@
                                 <h4>Javascript</h4>
                                 <ul>
                                     <li>Programmation orienté objet</li>
+                                    <li>Notation pointé</li>
                                     <li>JQuery</li>
                                     <li>AJAX</li>
                                 </ul>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vu</a>
                             </div>
                         </div>
                         <h5 class="center">Javascript</h5>
@@ -185,7 +193,7 @@
                                     </ul>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vu</a>
                             </div>
                         </div>
                         <h5 class="center">HTML & CSS</h5>
@@ -199,10 +207,12 @@
                         <div id="modal5" class="modal">
                             <div class="modal-content">
                                 <h4>Reponsive Designe</h4>
-
+                                    <ul>
+                                        <li>Media Query</li>
+                                    </ul>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vu</a>
                             </div>
                         </div>
                         <h5 class="center">Responsive Design</h5>
@@ -217,10 +227,17 @@
                         <div id="modal6" class="modal">
                             <div class="modal-content">
                                 <h4>Content Management System</h4>
-
+                                    <ul>
+                                        <li>Site vitrine</li>
+                                        <li>Site e-commerce avec WooCommerce</li>
+                                        <li>Sauvegarde du site</li>
+                                        <li>Utilisation des plugings & thème enfant</li>
+                                        <li>Personnalisation thème</li>
+                                        <li>Event manager</li>
+                                    </ul>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vue</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">J'ai vu</a>
                             </div>
                         </div>
                         <h5 class="center">CMS</h5>
@@ -232,10 +249,11 @@
             </div>
         </div>
     </div>
+    <!-- Parallax image -->
     <div class="parallax-container valign-wrapper">
         <div class="parallax"><img src="{{ asset('img/background03.jpg') }}" alt="background 3"></div>
     </div>
-
+    <!-- Environnement -->
     <div class="container">
         <div class="section">
             <div class="col s12 center">
@@ -257,11 +275,11 @@
             </div>
         </div>
     </div>
-
+    <!-- Parallax image -->
     <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="{{ asset('img/background04.jpg') }}" alt="background 3"></div>
+        <div class="parallax"><img src="{{ asset('img/background04.jpg') }}" alt="background 4"></div>
     </div>
-
+    <!-- Parcours -->
     <div class="container">
         <div class="section">
             <div class="col s12 center">
@@ -373,12 +391,189 @@
                             <div class="desc">Comptabilités et finance des entreprises - Lycée Paul Gauguin - Tahiti</div>
                         </div>
                     </li>
-
-
-
-
                 </ul>
             </div>
+        </div>
+    </div>
+    <!-- Parallax image -->
+    <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="{{ asset('img/background05.jpg') }}" alt="background 5"></div>
+    </div>
+    <!-- Projets -->
+    <div class="container">
+        <div class="section">
+            <div class="col s12 center">
+                <h3 id="project" class="scrollspy">Projets</h3>
+            </div>
+            <div class="row">
+                <!-- Projet wordpress -->
+                <div class="card center col s4 card-main">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ asset('img/accueil_wp.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Projet wordpress OC<i class="material-icons right">more_vert</i></span>
+                        <p><a href="http://projetwp.augustinkavera.com" target="_blank">Voir le site</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Créez et déployez un site en ligne<i class="material-icons right">close</i></span>
+                        <h5>Contexte</h5>
+                        <p>Vous devez créer un site web pour promouvoir les activités culturelles de votre ville ou village,
+                            à la demande de la mairie. On vous demande de créer un site qui respecte visuellement l’identité
+                            de la ville avec un certain nombre de fonctionnalités. La ville souhaite être en mesure de mettre
+                            à jour le contenu de son site sans avoir à faire appel à un prestataire dans le futur.
+                        </p>
+                        <h5>Compétences valider</h5>
+                        <ul>
+                            <li>Définir et présenter un plan de site ainsi que les solutions techniques appropriées en fonction des différents navigateurs. </li>
+                            <li>Créer un site Internet, de sa conception à sa livraison. </li>
+                            <li>Présenter une charte graphique. </li>
+                            <li>Mettre en place une politique de diffusion ou de distribution. </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Gestion de projet -->
+                <div class="card center col s4 card-main">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ asset('img/venture.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Gestion de projet OC<i class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://drive.google.com/drive/folders/0B1YzgbYq1DjcOWNsS1FGM0tGSzg?usp=sharing">Jeter un oeil sur le drive</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Salon du chocolat<i class="material-icons right">close</i></span>
+                        <h5>Livrables</h5>
+                        <ul>
+                            <li>- <a target="_blank" href="{{ asset('pdf/propale.pdf') }}">Proposition commerciale</a></li>
+                            <li>- <a target="_blank" href="{{ asset('pdf/ndc.pdf') }}">Note de cadrage</a></li>
+                            <li>- <a target="_blank" href="{{ asset('pdf/pdc/pdf') }}">Plan de charge</a></li>
+                            <li>- <a target="_blank" href="{{ asset('pdf/cdc.pdf') }}">Cahier des charges</a></li>
+                            <li>- <a target="_blank" href="{{ asset('pdf/devis.pdf') }}">Devis</a></li>
+                        </ul>
+                        <h5>Scénario</h5>
+                        <p>
+                            Vous êtes chef de projet dans une agence web.
+                        </p>
+                        <h5>Brief client</h5>
+                        <p>
+                            Frédéric Charain, organisateur du salon du chocolat de Paris, souhaite faire développer un site web pour communiquer sur son évènement ;
+                            celui-ci aura lieu dans 6 mois (à compter de la date de début du projet).
+
+                            Il souhaite pouvoir y présenter :
+                        </p>
+                            <ul>
+                                <li>- la liste des exposants;</li>
+                                <li>- la carte des exposants;</li>
+                                <li>- les intervenants prévus lors des tables rondes;</li>
+                                <li>- la liste des actualités et des retombées presse.</li>
+                                <li>- Il souhaite aussi que les billets d’entrée puissent être commandés directement en ligne sur le site.</li>
+                            </ul>
+
+                        <h5>Compétences valider</h5>
+                        <ul>
+                            <li>- Présenter une réponse à l'appel d'offres et rédiger un devis et le cahier des charges qui y est lié </li>
+                            <li>- Élaborer les différents éléments d’un projet </li>
+                            <li>- Rédiger un cahier des charges fonctionnel </li>
+                            <li>- Rédiger le cahier des charges technique</li>
+                            <li>- Construire un planning de réalisation </li>
+                            <li>- Formaliser un document contenant le dossier de création, le cahier des charges et tous les documents utiles aux mises à jour et aux évolutions d’un projet </li>
+                            <li>- Soutenir et argumenter ses propositions </li>
+                            <li>- Rédiger un organigramme fonctionnel pour la réalisation d’un projet </li>
+                            <li>- Mettre en place un diagramme organisationnel (Gantt, PERT, etc.) à l’aide de logiciels appropriés </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Forteroche -->
+                <div class="card center col s4 card-main">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ asset('img/forteroche.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Blog de Jean Forteroche<i class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="http://forteroche.augustinkavera.com">Visiter le blog</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Blog en PHP / POO from scratch<i class="material-icons right">close</i></span>
+                        <h5>Contexte</h5>
+                        <p>
+                            Je viens de décrocher un contrat avec Jean Forteroche, acteur et écrivain.
+                            Il travaille actuellement sur son prochain roman, "Billet simple pour l'Alaska".
+                            Il souhaite innover et le publier par épisode en ligne sur son propre site.
+
+                            Seul problème : Jean n'aime pas WordPress et souhaite avoir son propre outil de blog,
+                            offrant des fonctionnalités plus simples. Je vais donc devoir développer un moteur de blog en PHP et MySQL sans utiliser de framework PHP en appliquant une structure MVC.
+                        </p>
+
+                        <h5>Compétences valider</h5>
+                        <ul>
+                            <li>- Créer un site Internet, de sa conception à sa livraison </li>
+                            <li>- Organiser le code en langage PHP</li>
+                            <li>- Récupérer la saisie d’un formulaire utilisateur en langage PHP</li>
+                            <li>- Analyser les données utilisées par le site ou l’application</li>
+                            <li>- Construire une base de données</li>
+                            <li>- Soutenir et argumenter ses propositions</li>
+                            <li>- Insérer ou modifier les données d’une base</li>
+                            <li>- Récupérer les données d’une base</li>
+                        </ul>
+
+                        <h5>Techno utilisées</h5>
+                        <ul>
+                            <li>- PHP</li>
+                            <li>- Programmation orienté objet</li>
+                            <li>- Structure MVC</li>
+                            <li>- Javascript</li>
+                            <li>- HTML 5</li>
+                            <li>- CSS 3</li>
+                            <li>- MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Billetterie du Louvre -->
+                <div class="card center col s4 card-main">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ asset('img/louvre.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Musée du Louvre<i class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://louvre.augustinkavera.com">Commander un billet ?</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Billetterie du Musée du Louvre<i class="material-icons right">close</i></span>
+                        <h5>Contexte</h5>
+                        <p>
+                            Le musée du Louvre vous a missionné pour un projet ambitieux : créer un nouveau système de
+                            réservation et de gestion des tickets en ligne pour diminuer les longues files d’attente
+                            et tirer parti de l’usage croissant des smartphones. <br/>
+                            L’interface doit être fonctionnelle, claire et rapide avant tout. Le client ne souhaite
+                            pas surcharger le site d’informations peu utiles : l’objectif est de permettre
+                            aux visiteurs d’acheter un billet rapidement.
+                        </p>
+                        <h5>Compétences valider</h5>
+                        <ul>
+                            <li>- Prendre en main le framework Symfony.</li>
+                            <li>- Créer un site Internet, de sa conception à sa livraison.</li>
+                            <li>- Elaborer les différents éléments d'un projet.</li>
+                        </ul>
+                        <h5>Techno utilisées</h5>
+                        <ul>
+                            <li>- PHP 7</li>
+                            <li>- Symfony 3.4</li>
+                            <li>- Twig</li>
+                            <li>- MySQL</li>
+                            <li>- Javascript</li>
+                            <li>- JQuery</li>
+                            <li>- Stripe</li>
+                            <li>- HTML 5</li>
+                            <li>- CSS 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 

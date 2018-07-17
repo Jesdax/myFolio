@@ -1,39 +1,4 @@
 
-html {
-    font-size: 15px;
-}
-/* --- Navigation --- */
-
-.white {
-    background-color: rgb(6, 6, 6) !important;
-}
-
-nav ul a,
-nav .brand-logo {
-    color: #ffffff;
-}
-
-.sidenav-trigger {
-    color: #ff546d;
-}
-
-
-p {
-    line-height: 2rem;
-}
-
-
-
-.parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255,255,255,.9);
-}
-.parallax-container .section {
-    width: 100%;
-}
-
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
         position: absolute;
@@ -42,49 +7,21 @@ p {
     #index-banner .section {
         top: 10%;
     }
+
+
 }
 
 @media only screen and (max-width : 600px) {
     #index-banner .section {
         top: 0;
     }
+
+    .first_background {
+        min-height: 390px;
+    }
+
 }
 
-.icon-block {
-    padding: 0 15px;
-}
-.icon-block .material-icons {
-    font-size: inherit;
-}
-
-footer.page-footer {
-    margin: 0;
-}
-
-.icon-main {
-    height: 70px;
-    width: 70px;
-}
-
-.first_background {
-    min-height: 850px;
-}
-
-.focus-title {
-    color: #ff546d;
-}
-
-
-h1 {
-    font-size: 45px;
-}
-
-.icon-mobile-nav {
-    height: 40px;
-    width: 40px;
-    padding-top: 5px;
-    margin-left: 20px;
-}
 
 /* ================ The Timeline ================ */
 
@@ -176,7 +113,7 @@ h1 {
 .direction-r .flag:before {
     position: absolute;
     top: 50%;
-    right: -40px;
+    right: -36px;
     content: ' ';
     display: block;
     width: 12px;
@@ -189,7 +126,7 @@ h1 {
 }
 
 .direction-r .flag:before {
-    left: -40px;
+    left: -36px;
 }
 
 .direction-l .flag:after {
@@ -294,7 +231,7 @@ h1 {
         display: block;
         width: 12px;
         height: 12px;
-        margin-left: -9px;
+        margin-left: -6px;
         background: #fff;
         border-radius: 10px;
         border: 4px solid rgb(255,80,80);
@@ -366,4 +303,112 @@ h1 {
 #particle-canvas {
     width: 100%;
     height: 100%;
+
+}
+
+.background-header {
+    width: 50px;
+    min-height: 45%;
+    min-width: 20%;
+}
+
+.photo-profil {
+    border-radius: 1000px;
+    height: 300px;
+    width: 300px;
+    z-index: 5;
+}
+
+
+html {
+    font-size: 15px;
+}
+
+.profil-picture {
+    border-radius: 1000px;
+    min-width: 20%;
+    min-height: 45%;
+}
+
+
+/* --- Navigation --- */
+
+.white {
+    background-color: rgb(6, 6, 6) !important;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #ffffff;
+}
+
+.sidenav-trigger {
+    color: #ff546d;
+}
+
+
+p {
+    line-height: 2rem;
+}
+
+
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.icon-main {
+    height: 70px;
+    width: 70px;
+}
+
+.first_background {
+    background-image: url("../img/background06.jpg");
+    min-height: 900px;
+    background-size: cover;
+}
+
+.focus-title {
+    color: #ff546d;
+}
+
+
+h1 {
+    font-size: 45px;
+}
+
+.icon-mobile-nav {
+    height: 40px;
+    width: 40px;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+img.activator {
+ height: 192px;
+}
+
+.profil {
+    border-radius: 1000px ;
+    z-index: 5;
+    width: 400px;
+    margin-left: 250px;
+    border: 10px white;
 }
