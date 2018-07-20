@@ -16,7 +16,7 @@
         {% block navigation %}
             <nav class="white " role="navigation">
                 <div class="nav-wrapper container">
-                    <a href="#" id="logo-container" class="brand-logo">Logo</a>
+                    <a href="#" id="logo-container" class="brand-logo">Augustin Kavera</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#about">A propos</a></li>
                         <li><a href="#skill">Compétences</a></li>
@@ -40,10 +40,11 @@
         <li><a href="#">Contact<img class="icon-mobile-nav" src="{{ asset('icon/paper-plane.svg') }}" alt="Contact"></a></li>
     </ul>
     <!-- Image 1er plan -->
-        <div class="parallax-container first_background section valign-wrapper">
-            <img class="profil" src="{{ asset('img/profil.jpg') }}" alt="Profil">
-            <h1>Chef de projet digital junior & Développeur web junior</h1>
-
+        <div id="index-banner" class="parallax-container first_background section valign-wrapper">
+            <img class="profil center" src="{{ asset('img/profil.jpg') }}" alt="Profil">
+            <div class="left-margin"><h1>Chef de projet digital junior & Développeur web junior</h1>
+            <span>Site toujours en cours de construction</span>
+            </div>
         </div>
 
     <!-- A propos -->
@@ -407,7 +408,7 @@
             </div>
             <div class="row">
                 <!-- Projet wordpress -->
-                <div class="card center col s4 card-main">
+                <div class="card center col s12 m4 card-main">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="{{ asset('img/accueil_wp.jpg') }}">
                     </div>
@@ -433,7 +434,7 @@
                     </div>
                 </div>
                 <!-- Gestion de projet -->
-                <div class="card center col s4 card-main">
+                <div class="card center col s12 m4 card-main">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="{{ asset('img/venture.jpg') }}">
                     </div>
@@ -447,7 +448,7 @@
                         <ul>
                             <li>- <a target="_blank" href="{{ asset('pdf/propale.pdf') }}">Proposition commerciale</a></li>
                             <li>- <a target="_blank" href="{{ asset('pdf/ndc.pdf') }}">Note de cadrage</a></li>
-                            <li>- <a target="_blank" href="{{ asset('pdf/pdc/pdf') }}">Plan de charge</a></li>
+                            <li>- <a target="_blank" href="{{ asset('pdf/pdc.pdf') }}">Plan de charge</a></li>
                             <li>- <a target="_blank" href="{{ asset('pdf/cdc.pdf') }}">Cahier des charges</a></li>
                             <li>- <a target="_blank" href="{{ asset('pdf/devis.pdf') }}">Devis</a></li>
                         </ul>
@@ -485,12 +486,12 @@
                     </div>
                 </div>
                 <!-- Forteroche -->
-                <div class="card center col s4 card-main">
+                <div class="card center col s12 m4 card-main">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="{{ asset('img/forteroche.jpg') }}">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Blog de Jean Forteroche<i class="material-icons right">more_vert</i></span>
+                        <span class="card-title activator grey-text text-darken-4">Blog d'écrivain<i class="material-icons right">more_vert</i></span>
                         <p><a target="_blank" href="http://forteroche.augustinkavera.com">Visiter le blog</a></p>
                     </div>
                     <div class="card-reveal">
@@ -532,7 +533,7 @@
             </div>
             <div class="row">
                 <!-- Billetterie du Louvre -->
-                <div class="card center col s4 card-main">
+                <div class="card center col s12 m4 card-main">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="{{ asset('img/louvre.jpg') }}">
                     </div>

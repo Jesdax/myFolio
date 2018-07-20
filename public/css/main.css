@@ -15,13 +15,15 @@
     #index-banner .section {
         top: 0;
     }
+    .profil {
+        margin-left: 0;
+    }
 
     .first_background {
         min-height: 390px;
     }
 
 }
-
 
 /* ================ The Timeline ================ */
 
@@ -358,6 +360,7 @@ p {
     line-height: 0;
     height: auto;
     color: rgba(255,255,255,.9);
+    background-size: cover;
 }
 .parallax-container .section {
     width: 100%;
@@ -411,4 +414,8 @@ img.activator {
     width: 400px;
     margin-left: 250px;
     border: 10px white;
+}
+
+.left-margin {
+    margin-left: 50px;
 }
